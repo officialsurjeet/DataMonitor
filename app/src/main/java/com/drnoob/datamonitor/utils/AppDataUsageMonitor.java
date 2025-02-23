@@ -64,7 +64,7 @@ public class AppDataUsageMonitor extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        startForeground(0, null);
+        startForeground(1, null);
         startMonitor(this);
         AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
         Intent intent = new Intent(this, AppDataMonitor.class);
